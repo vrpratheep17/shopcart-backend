@@ -1,0 +1,50 @@
+{
+  "name": "shopping_cart_backend",
+  "version": "1.0.0",
+  "description": "Backend api for shoppping cart ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm ./server/server.js",
+    "test": "mocha",
+    "test:awesome": "mocha -r esm --reporter mochawesome || true",
+    "docker": "docker build -t shopcart . && docker run -it -p 8092:8092 helpvu",
+    "stop-docker": "docker stop shopcart"
+  },
+  "keywords": [
+    "shopping",
+    "backend",
+    "rest",
+    "api"
+  ],
+  "dependencies": {
+    "bcrypt": "5.0.1",
+    "body-parser": "1.19.0",
+    "chai": "4.2.0",
+    "chai-http": "4.3.0",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "esm": "3.2.25",
+    "express": "4.17.1",
+    "faker": "5.1.0",
+    "joi": "17.3.0",
+    "jsonwebtoken": "8.5.1",
+    "mocha": "8.2.1",
+    "moment": "2.29.1",
+    "multer": "1.4.2",
+    "nodemon": "2.0.6",
+    "pg": "8.4.2",
+    "pg-hstore": "2.3.3",
+    "redis": "3.0.2",
+    "sequelize": "5.22.3",
+    "sequelize-noupdate-attributes": "1.0.0",
+    "superagent": "6.1.0",
+    "supertest": "6.0.1",
+    "swagger-jsdoc": "5.0.1",
+    "swagger-ui-express": "4.1.4"
+  },
+  "devDependencies": {
+    "mochawesome": "6.2.1"
+  },
+  "author": "Pratheep VR",
+  "license": "ISC"
+}
