@@ -7,7 +7,7 @@
     "start": "node -r esm ./server/server.js",
     "test": "mocha",
     "test:awesome": "mocha -r esm --reporter mochawesome || true",
-    "docker": "docker build -t shopcart . && docker run -it -p 8092:8092 helpvu",
+    "docker": "docker build -t shopcart . && docker run -it -p 8092:8092 shopcart",
     "stop-docker": "docker stop shopcart"
   },
   "keywords": [
